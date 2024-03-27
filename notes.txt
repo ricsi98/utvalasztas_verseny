@@ -1,0 +1,16 @@
+A long-range connection lehet-e 
+1. saját magával?
+2. szomszédjával?
+Mert akkor más és más az eloszlás amiből mintavételezünk
+
+Mi az h toroidal lattice, nem square lattice-n van a szimuláció?
+
+"Each datapoint is the average of 1000 runs"
+Tehát minden alfához egy gráf és azon 1000 random csúcspár között út, vagy minden út egy új gráfon?
+
+
+efficient sampling:
+no need for normalizing probas (just know the sum - can it be efficiently computed?)
+
+1. Mindig on-the-spot generáljuk a skip-connectiont (így megspóroljuk az összess connection legenerálását)
+2. "okosan" generáljuk a skip connectiont (füzetben)
