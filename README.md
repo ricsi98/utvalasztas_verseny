@@ -19,3 +19,8 @@ Illetve az is megoldható, hogy indexelhetőek legyenek a $d$ távolságra levő
 
 ### Rejection sampling
 Mivel nem mindig középről mintavételezünk, ezért rejection samplinget alkalmazok egy $2N$ méretű rácsból az $N$ méretű rácsra. Ez méréseim alapján ~4.5 mintavételből megáll. Ha az algoritmust egy toroid gráfon implementáltam volna, ez elkerülhető lenne - azaz ~4.5 szörös gyorsulás lenne elérhető.
+
+# Párhuzamosítás grafikus gyorsítón
+A szimuláció python-ban való futtatása jelentősen lassabb, mintha ezt valami hardware közelibb módon tennénk. A szimuláció felgyorsításának érdekében azt CUDA-ban implementáltam, így grafikus gyorsítón futtatva nagyságrendekkel gyorsabban megkapjuk az eredményt.
+
+Így képes voltam futtatni N=1_000_000 rácsméretre is a szimulációt ~4 perc alatt. A cikkben szereplő N=20_000 rácsméretre így <5 másodperc alatt fut a szimuláció.
